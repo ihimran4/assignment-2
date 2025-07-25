@@ -2,222 +2,371 @@
 
 
 .noto-serif-normal {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .inter-normal {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-body{
+
+body {
     max-width: 1140px;
     background-color: #F5F8FF;
     margin: 25px 150px;
 
 }
+
 /* shared style */
-.flex{
+.flex {
     display: flex;
 }
-.text-color-1{
+
+.text-color-1 {
     color: #E95A08;
 }
-.description{
+
+.description {
     /* font-size: 1.37rem; */
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.3rem;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #E95A08;
     color: white;
     padding: 19px 80px;
     font-weight: 700;
     border: none;
 }
+
+.deals-offer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.shop {
+    font-weight: 700;
+    color: white;
+}
+
 /* navbar styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px ;
+    margin-bottom: 120px;
 }
-.nav-links ul{
+
+.nav-links ul {
     list-style: none;
     gap: 48px;
 }
-.nav-link a{
+
+.nav-link a {
     text-decoration: none;
     /* color: black; */
 }
-#home{
+
+#home {
     font-weight: bold;
 }
-.nav-link-color-1{
+
+.nav-link-color-1 {
     color: black;
 }
-.nav-link-color{
+
+.nav-link-color {
     color: #8987A1;
 }
+
 /* banner related styles */
-.banner{
+.banner {
     justify-content: space-between;
     align-items: end;
     margin-bottom: 120px;
 }
-.banner-text,.banner img{
+
+.banner-text,
+.banner img {
     max-width: 570px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: bold;
 }
+
 /* our plants section styles */
-.plants{
+.plants {
     text-align: center;
 }
-.plants-title{
+
+.plants-title {
     font-size: 3rem;
     font-weight: bold;
     margin: 0 auto;
 }
+
 .plants-description {
     margin: 0 auto;
     width: 888px;
 }
- /* cards styles */
 
-.cards{
+/* cards styles */
+
+.cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 30px;
 }
-.card img{
+
+.card img {
     width: 270px;
     height: 322px;
 }
-.card-title, .card-cost{
+
+.card-title,
+.card-cost {
     margin: 15px 20px;
 }
-.card-title{
+
+.card-title {
     font-weight: 500;
     font-size: 1.37rem;
 }
-.card-cost{
+
+.card-cost {
     font-weight: bold;
     font-size: 1.37rem;
 }
+
 /* badge and store narrative related styles */
-.narrative{
+.narrative {
     max-width: auto;
     display: flex;
     margin-top: 210px;
 
 }
-.badge{
+
+.badge {
     width: 286px;
     height: 286px;
     margin-left: -190px;
     margin-top: -130px;
 }
-.narrative-title{
+
+.narrative-title,
+.deals-title {
     font-size: 3.1rem;
     font-weight: bold;
 }
-.narratives li{
+
+.narratives li {
     margin-bottom: 20px;
 }
 
+/* deals style */
+.deals {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.deals-title {
+    margin-bottom: 6px;
+}
+
+.deals-description {
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+/* offers styles */
+.offers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 120px;
+}
+.offers img{
+    border-radius: 22px;
+}
+
+.offers-left {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container-bloom,
+.container-ana,
+.container-zabo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.offers img {
+    filter: brightness(50%);
+}
+
+.container-title {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+}
+
+.container-zabo div {
+    position: absolute;
+    top: 190px;
+    left: 280px;   
+}
+
+.container-title,.container-zabo div {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container-bloom a,
+.container-ana a,
+.container-zabo a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+
+
+
+/* .deals-img img{
+    filter: brightness(50%);
+} */
 /* mobile responsive styles */
 @media screen and (max-width: 576px) {
-    body{
-        margin:10px auto ;
+    body {
+        margin: 10px auto;
     }
-   .hidden{
-    display: none;
-   }
-   .navbar{
-    margin-left: 16px ;
-    margin-bottom: 28px ;
-    justify-content: space-between;
-    justify-items: start;
-   }
-   .logo-pic{
-    width: 64px;
-   }
-   .banner{
-    flex-direction: column-reverse;
-    gap: 28px;
 
-   }
-   .banner img,.banner-text{
-    width: 393px;
-   }
-   .banner-title{
-    font-size: 1.90rem;
+    .hidden {
+        display: none;
+    }
 
-   }
-   /* cards responsive */
-   .plants{
-    text-align: center;
-   }
-   .plants-description,.cards{
-    width: auto;
-   }
-   .cards{
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    /* width: 170px; */
-   }
-   .card{
-    width: 170px;
-    height: 340px;
-    margin-top: 28px ;
-    /* margin-bottom: 28px; */
-    margin-left: 15px;
+    .navbar {
+        margin-left: 16px;
+        margin-bottom: 28px;
+        justify-content: space-between;
+        justify-items: start;
+    }
 
-   }
-   .card img{
-    width: 170px;
-    height: 196px;
-   }
-   .btn-primary{
-    width: 170px;
-    height: 50px;
-    padding: 19px 30px;
-   }
-   /* badge and store narrative responsive styles */
-   .narrative{
-    flex-direction: column;
-    margin: 40px 15px 140px 15px;
-    align-items: center;
-   }
-   .store{
-    width: 360px;
-    height: 390px;
-   }
-   .badge{
-    display: none;
-   }
-   .narrative-description{
-    width: 361px;
-   }
-   .narrative-title{
-    font-size: 1.5rem;
-   }
-   .narratives{
-    font-size: 0.87rem;
-   }
-   .narratives li{
-    margin-bottom: 8px;
-   }
-   
+    .logo-pic {
+        width: 64px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 28px;
+
+    }
+
+    .banner img,
+    .banner-text {
+        width: 393px;
+    }
+
+    .banner-title {
+        font-size: 1.90rem;
+
+    }
+
+    /* cards responsive */
+    .plants {
+        text-align: center;
+    }
+
+    .plants-description,
+    .cards {
+        width: auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        /* width: 170px; */
+    }
+
+    .card {
+        width: 170px;
+        height: 340px;
+        margin-top: 28px;
+        /* margin-bottom: 28px; */
+        margin-left: 15px;
+
+    }
+
+    .card img {
+        width: 170px;
+        height: 196px;
+    }
+
+    .btn-primary {
+        width: 170px;
+        height: 50px;
+        padding: 19px 30px;
+    }
+
+    /* badge and store narrative responsive styles */
+    .narrative {
+        flex-direction: column;
+        margin: 40px 15px 140px 15px;
+        align-items: center;
+    }
+
+    .store {
+        width: 360px;
+        height: 390px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .narrative-description {
+        width: 361px;
+    }
+
+    .narrative-title {
+        font-size: 1.5rem;
+    }
+
+    .narratives {
+        font-size: 0.87rem;
+    }
+
+    .narratives li {
+        margin-bottom: 8px;
+    }
+    /* offers responsive */
+    .offers{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .offers-right img{
+        width: 365px;
+    }
+    
+.container-zabo div {
+    position: absolute;
+    top: 75px;
+    left: 95px;   
+}
+
 }

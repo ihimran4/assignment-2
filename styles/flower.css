@@ -22,6 +22,11 @@ body{
 .text-color-1{
     color: #E95A08;
 }
+.description{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
 /* navbar styles */
 .navbar{
     justify-content: space-between;
@@ -49,6 +54,7 @@ body{
 .banner{
     justify-content: space-between;
     align-items: end;
+    margin-bottom: 120px;
 }
 .banner-text,.banner img{
     max-width: 570px;
@@ -57,10 +63,19 @@ body{
     font-size: 4rem;
     font-weight: bold;
 }
-.banner-description{
-    font-size: 1.37rem;
-    color: rgba(0, 0, 0, 0.5);
+/* our plants section styles */
+.plants{
+    text-align: center;
 }
+.plants-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.plants-description {
+    margin: 0 auto;
+}
+
 /* mobile responsive styles */
 @media screen and (max-width: 576px) {
     body{
@@ -70,7 +85,6 @@ body{
     display: none;
    }
    .navbar{
-    margin-right: 16px;
     margin-left: 16px ;
     margin-bottom: 28px ;
     justify-content: space-between;

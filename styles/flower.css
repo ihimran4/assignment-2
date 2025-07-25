@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body{
+    max-width: 1140px;
+    background-color: #F5F8FF;
+    margin: 25px 150px;
+
+}
+/* shared style */
+.flex{
+    display: flex;
+}
+.text-color-1{
+    color: #E95A08;
+}
+/* navbar styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px ;
+}
+.nav-links ul{
+    list-style: none;
+    gap: 48px;
+}
+.nav-link a{
+    text-decoration: none;
+    /* color: black; */
+}
+#home{
+    font-weight: bold;
+}
+.nav-link-color-1{
+    color: black;
+}
+.nav-link-color{
+    color: #8987A1;
+}
+/* banner related styles */
+.banner{
+    justify-content: space-between;
+    align-items: end;
+}
+.banner-text,.banner img{
+    max-width: 570px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* mobile responsive styles */
+@media screen and (max-width: 576px) {
+    body{
+        margin:10px auto ;
+    }
+   .hidden{
+    display: none;
+   }
+   .navbar{
+    margin-right: 16px;
+    margin-left: 16px ;
+    margin-bottom: 28px ;
+    justify-content: space-between;
+    justify-items: start;
+   }
+   .logo-pic{
+    width: 64px;
+   }
+   .banner{
+    flex-direction: column-reverse;
+    gap: 28px;
+
+   }
+   .banner img,.banner-text{
+    width: 393px;
+   }
+   .banner-title{
+    font-size: 1.90rem;
+
+   }
+}

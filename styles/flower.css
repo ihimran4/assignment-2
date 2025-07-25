@@ -30,7 +30,7 @@ body{
     color: #E95A08;
 }
 .description{
-    font-size: 1.37rem;
+    /* font-size: 1.37rem; */
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.3rem;
 }
@@ -113,6 +113,27 @@ body{
     font-weight: bold;
     font-size: 1.37rem;
 }
+/* badge and store narrative related styles */
+.narrative{
+    max-width: auto;
+    display: flex;
+    margin-top: 210px;
+
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    margin-left: -190px;
+    margin-top: -130px;
+}
+.narrative-title{
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+.narratives li{
+    margin-bottom: 20px;
+}
+
 /* mobile responsive styles */
 @media screen and (max-width: 576px) {
     body{
@@ -173,4 +194,30 @@ body{
     height: 50px;
     padding: 19px 30px;
    }
+   /* badge and store narrative responsive styles */
+   .narrative{
+    flex-direction: column;
+    margin: 40px 15px 140px 15px;
+    align-items: center;
+   }
+   .store{
+    width: 360px;
+    height: 390px;
+   }
+   .badge{
+    display: none;
+   }
+   .narrative-description{
+    width: 361px;
+   }
+   .narrative-title{
+    font-size: 1.5rem;
+   }
+   .narratives{
+    font-size: 0.87rem;
+   }
+   .narratives li{
+    margin-bottom: 8px;
+   }
+   
 }

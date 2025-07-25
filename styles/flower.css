@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .noto-serif-normal {
@@ -8,6 +8,13 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 body{
     max-width: 1140px;
@@ -26,6 +33,13 @@ body{
     font-size: 1.37rem;
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.3rem;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    padding: 19px 80px;
+    font-weight: 700;
+    border: none;
 }
 /* navbar styles */
 .navbar{
@@ -74,8 +88,31 @@ body{
 }
 .plants-description {
     margin: 0 auto;
+    width: 888px;
 }
+ /* cards styles */
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.card img{
+    width: 270px;
+    height: 322px;
+}
+.card-title, .card-cost{
+    margin: 15px 20px;
+}
+.card-title{
+    font-weight: 500;
+    font-size: 1.37rem;
+}
+.card-cost{
+    font-weight: bold;
+    font-size: 1.37rem;
+}
 /* mobile responsive styles */
 @media screen and (max-width: 576px) {
     body{
